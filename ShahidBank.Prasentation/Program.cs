@@ -38,7 +38,7 @@
                 switch (mainMenuChoice) {
                     case 1: CustomersMenu(); // Display Customer Name
                         break;
-                    case 2: // Display Accounts Menu
+                    case 2:AccountsMenu(); // Display Accounts Menu
                         break;
                     case 3: // Display Funds Transfer
                         break; 
@@ -79,5 +79,28 @@
             customerMenuChoice = int.Parse(System.Console.ReadLine());
         }
         while (customerMenuChoice != 0); 
+    }
+
+    // Accounts Menu Function
+    static void AccountsMenu()
+    {
+        // varicle to store customer menu choice
+        int accountMenuChoice = -1;
+        // do while loops start
+        do
+        {
+            // print customerMenu 
+            System.Console.WriteLine("\n :::: Customer Menu ::::");
+            System.Console.WriteLine("1. Add Account");
+            System.Console.WriteLine("2. Del Account");
+            System.Console.WriteLine("3. Update Account");
+            System.Console.WriteLine("4. View Account");
+            System.Console.WriteLine("0. Back to main menu");
+
+            //take input
+            System.Console.Write("Enter Choice : ");
+            accountMenuChoice = int.Parse(System.Console.ReadLine());
+        }
+        while (accountMenuChoice != 0);
     }
 }
